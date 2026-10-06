@@ -1,0 +1,20 @@
+{
+  "name": "larkspur-tasks",
+  "version": "1.0.0",
+  "description": "Task-board API with a background worker and an hourly digest",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "worker": "node worker.js",
+    "digest": "node scripts/digest.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "5.2.1",
+    "ioredis": "5.11.1",
+    "pg": "8.23.1"
+  }
+}
